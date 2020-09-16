@@ -230,7 +230,7 @@ ol li {
 
 .btn-common:hover {
   color: #fff;
-  background: #F50057;
+  background: #ff500f;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -1311,7 +1311,7 @@ a.back-to-top:focus {
 }
 
 #gallery .gallery-box:hover .overlay-box {
-  background: rgba(233, 30, 99, 0.7);
+  background:#ff500f;
   transform: scale(1, 1);
   transition: all 500ms ease;
 }
@@ -1411,7 +1411,7 @@ a.back-to-top:focus {
 }
 
 .team-item .overlay-social-icon .social-icons li a:hover .fa-instagram {
-  background: #fb3958;
+  background: #ff500f;
 }
 
 .team-item .info-text {
@@ -1821,7 +1821,7 @@ a.back-to-top:focus {
 }
 
 .footer-area .footer-social li .google-plus:hover {
-  background: #d34836;
+  background: #ff500f;
 }
 
 .footer-area .footer-text p {
