@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/index.html', function (req, res) {
-   res.sendFile(path.join(__dirname, 'index1.html'));
+   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port, function () {

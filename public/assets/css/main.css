@@ -613,11 +613,13 @@ a.back-to-top:focus {
 
 .navbar-brand {
   position: relative;
+  height: 75px;
   padding: 0px;
 }
 
 .navbar-brand img {
-  width: 70%;
+  height: 100%;
+  padding: 2px;
 }
 
 .top-nav-collapse {
@@ -633,6 +635,17 @@ a.back-to-top:focus {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   background: #fff !important;
+}
+
+.top-nav-subscription{
+  display: none;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  transition: 1s;
 }
 
 .top-nav-collapse .navbar-brand {
@@ -822,11 +835,11 @@ a.back-to-top:focus {
 }
 
 /* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 991px) {
   #nav-main li a.nav-link {
     padding-top: 18px;
   }
-}
+} */
 
 .navbar-toggler {
   display: none;
@@ -840,19 +853,22 @@ a.back-to-top:focus {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .navbar-header {
     width: 100%;
+    height: 57px;
   }
 
   .navbar-brand {
     position: absolute;
-    padding: 15px 15px;
+    height: 57px;
+    padding: 2px 2px;
     top: 0;
   }
 
   .navbar-brand img {
-    width: 75%;
+    height: 100%;
+    width: auto;
   }
 
   #mobile-menu {
@@ -1557,9 +1573,10 @@ a.back-to-top:focus {
   background: #111111;
 }
 
-#conatiner-map {
-  width: 100%;
-  height: 580px;
+#subscription{
+  background-color: #f3f4f3;
+  padding: 90px;
+  min-height: 100vh;
 }
 
 .title-forme {
@@ -1678,12 +1695,12 @@ a.back-to-top:focus {
 
 .container-form .form-wrapper {
   background-color: white;
-  padding: 56px;
+  padding: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .container-form .form-wrapper .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .container-form .form-wrapper .form-control {
@@ -2260,4 +2277,8 @@ a.back-to-top:focus {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   border-color: #fff;
+}
+
+#description-title{
+  padding: 0;
 }
