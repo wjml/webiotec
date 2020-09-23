@@ -1,7 +1,7 @@
 /* only small desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   #main-slide .carousel-caption {
-    top: 32%;
+    top: 25%!important;
   }
   .carousel-indicators {
     font-size: 14px;
@@ -36,7 +36,7 @@
 /* tablets */
 @media (max-width: 991px) {
   #main-slide .carousel-caption {
-    top: 32%;
+    top: 25%;
   }
   #main-slide .carousel-item .carousel-caption .heading {
     font-size: 20px;
@@ -260,9 +260,9 @@
   #main-slide .carousel-item .carousel-caption p {
     font-size: 14px;
   }
-  #main-slide .carousel-caption .btn {
+  /* #main-slide .carousel-caption .btn {
     margin: 0;
-  }
+  } */
   #main-slide .carousel-indicators {
     display: none;
   }
@@ -275,8 +275,8 @@
   .newsletter-wrapper .sub-btn {
     padding: 11px 20px;
   }
-  .btn {
+  /* .btn {
     padding: 5px 7px;
     font-size: 13px;
-  }
+  } */
 }
