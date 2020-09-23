@@ -3,6 +3,9 @@
 html {
   overflow-x: hidden;
 }
+.carousel-item video {
+  height: 700px;
+}
 
 body {
   background: #fff;
@@ -881,7 +884,11 @@ a.back-to-top:focus {
   }
 
   .countdown-timer {
-    margin-top: calc(592px - 100vh) !important;
+    margin-top: calc(650px - 100vh) !important;
+  }
+
+  .carousel-item video {
+    height: 600px;
   }
 
   .navbar-header {
@@ -927,6 +934,16 @@ a.back-to-top:focus {
   .slicknav_nav .dropdown li a.active {
     background: #f5f5f5;
     color: #105a8d;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .carousel-item video {
+    height: 550px;
+  }
+  .countdown-timer {
+    margin-top: calc(600px - 100vh)!important;
   }
 }
 
