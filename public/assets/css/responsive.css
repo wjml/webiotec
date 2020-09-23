@@ -11,7 +11,7 @@
     margin-top: 5px;
   }
   #main-slide .carousel-item .carousel-caption p {
-    font-size: 13px;
+    font-size: 16px;
   }
   #hero-area .contents .head-title {
     font-size: 40px;
@@ -98,7 +98,7 @@
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
   #main-slide .carousel-caption {
-    top: 32%;
+    top: 25%;
   }
   #main-slide .carousel-item .carousel-caption .heading {
     font-size: 20px;
@@ -196,7 +196,7 @@
     padding: 15px;
   }
   .schedule .schedule-tab-title .nav-tabs .nav-link {
-    width: 288px;
+    width: 100%;
   }
   .accordion .header-title {
     font-size: 11px;
@@ -258,7 +258,7 @@
     letter-spacing: 0;
   }
   #main-slide .carousel-item .carousel-caption p {
-    font-size: 14px;
+    font-size: 15px;
   }
   /* #main-slide .carousel-caption .btn {
     margin: 0;

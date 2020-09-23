@@ -637,7 +637,7 @@ a.back-to-top:focus {
   background: #fff !important;
 }
 
-.top-nav-subscription{
+.top-nav-subscription {
   display: none;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -853,13 +853,44 @@ a.back-to-top:focus {
   display: none;
 }
 
-@media screen and (max-width: 992px) {
-  .countdown-timer{
-    margin-top: calc(620px - 100vh)!important;
+/* @media screen and (min-width: 992px) {
+  .countdown-timer .container {
+    border: 3px solid white;
+    border-radius: 20px;
+    padding-top: 10px;
+    width: 70%;
+    position: relative;
+    background-color: white;
   }
+
+  .countdown-timer .heading-count h2{
+    color: black!important;
+  }
+} */
+
+@media screen and (max-width: 992px) {
+  #main-slide .carousel-item .carousel-caption {
+    width: 100%!important;
+  }
+  .time-entry {
+    zoom: 0.8;
+  }
+
+  #subscription {
+    padding-top: 60px !important;
+  }
+
+  .countdown-timer {
+    margin-top: calc(592px - 100vh) !important;
+  }
+
   .navbar-header {
     width: 100%;
     height: 57px;
+  }
+
+  .navbar .container {
+    width: 90%;
   }
 
   .navbar-brand {
@@ -1088,7 +1119,7 @@ a.back-to-top:focus {
   color: #848484;
   line-height: 16px;
   font-weight: 400;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .schedule .schedule-tab-content .tab-content {
@@ -1330,7 +1361,7 @@ a.back-to-top:focus {
 }
 
 #gallery .gallery-box:hover .overlay-box {
-  background:#ff500f;
+  background: #ff500f;
   transform: scale(1, 1);
   transition: all 500ms ease;
 }
@@ -1576,9 +1607,9 @@ a.back-to-top:focus {
   background: #111111;
 }
 
-#subscription{
+#subscription {
   background-color: #f3f4f3;
-  padding: 90px;
+  padding-top: 90px;
   min-height: 100vh;
 }
 
@@ -1692,7 +1723,7 @@ a.back-to-top:focus {
 .container-form {
   left: 0%;
   padding: 40px 15px;
-  margin-left: -15px;
+  margin: auto;
   z-index: 99;
 }
 
@@ -1975,17 +2006,17 @@ a.back-to-top:focus {
    Countdown Style Start
    ========================================================================== */
 .countdown-timer {
-  margin-top: calc((645px - 100vh));
+  margin-top: calc((640px - 100vh));
   padding: 0;
 }
 
 .countdown-timer .heading-count {
-  margin-bottom:-20px;
+  margin-bottom: -20px;
   /* padding: 10px 68px; */
 }
 
 .countdown-timer .heading-count h2 {
-  font-size: 30px;
+  font-size: 26px;
   color: white;
   text-transform: uppercase;
   line-height: 48px;
@@ -2016,7 +2047,7 @@ a.back-to-top:focus {
 
 .time-entry {
   display: inline-block;
-  min-width: 120px;
+  min-width: 130px;
   margin: 15px;
   height: 110px;
   padding: 20px;
@@ -2046,7 +2077,7 @@ a.back-to-top:focus {
 }
 
 .time-countdown {
-  margin:0;
+  margin: 0;
 }
 
 /* Pricing Ticket */
@@ -2189,9 +2220,13 @@ a.back-to-top:focus {
   opacity: 0;
   transition: opacity 100ms ease 0s;
   z-index: 0;
-  width: 80%;
+  width: 75%;
   margin: auto;
+  left: 0;
+  right: 0;
 }
+
+.carousel-caption {}
 
 #main-slide .carousel-item .carousel-caption .heading {
   font-size: 56px;
@@ -2204,7 +2239,7 @@ a.back-to-top:focus {
 
 #main-slide .carousel-item .carousel-caption .heading-img {
   display: block;
-  width: 55%;
+  width: 50%;
   min-width: 300px;
   height: auto;
   margin: auto;
@@ -2212,7 +2247,7 @@ a.back-to-top:focus {
 }
 
 #main-slide .carousel-item .carousel-caption p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #main-slide .carousel-item.active .carousel-caption {
@@ -2229,11 +2264,6 @@ a.back-to-top:focus {
   color: #fff;
   position: absolute;
   top: 35%;
-}
-
-#main-slide .carousel-caption {
-  left: 0;
-  right: 0;
 }
 
 
@@ -2300,6 +2330,6 @@ a.back-to-top:focus {
   border-color: #fff;
 }
 
-#description-title{
+#description-title {
   padding: 0;
 }
