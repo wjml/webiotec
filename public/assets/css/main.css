@@ -123,9 +123,9 @@ ol li {
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 42px;
   color: #212121;
-  line-height: 40px;
+  line-height: 46px;
   padding-bottom: 20px;
   font-weight: 700;
   text-align: center;
@@ -1291,8 +1291,9 @@ a.back-to-top:focus {
 }
 
 /* Services Item */
-.services {
+#about{
   background: #fff;
+  padding-top:90px;
 }
 
 .padding-none {
@@ -1664,7 +1665,7 @@ a.back-to-top:focus {
 
 #inscreva-se {
   background-color: #f3f4f3;
-  padding-top: 110px;
+  padding-top: 120px;
   min-height: 100vh;
 }
 
@@ -1801,9 +1802,9 @@ a.back-to-top:focus {
   display: block;
   width: 100%;
   line-height: 26px;
-  font-size: 14px;
+  font-size: 18px;
   box-shadow: none;
-  color: #848484;
+  color: #105a8d;
   text-transform: capitalize;
   background: #f7f7f7;
   border: 1px solid transparent;
@@ -1814,7 +1815,7 @@ a.back-to-top:focus {
 }
 
 .container-form .form-wrapper .form-control:focus {
-  color: #212121;
+  color: #ff500f;
   background-color: #fff;
   border-color: #105a8d;
   box-shadow: none;
