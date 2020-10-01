@@ -1789,6 +1789,11 @@ a.back-to-top:focus {
   margin-bottom: 25px;
 }
 
+.container-form .form-wrapper .form-check {
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
 .container-form .form-wrapper .form-control {
   display: block;
   width: 100%;

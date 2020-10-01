@@ -28,7 +28,7 @@
     })
     // Schedule Carousel Starts
     $('#recipeCarousel').carousel({
-      interval: 100
+      interval: 1000
     })
     
     $('.carousel .carousel-item').each(function(){
