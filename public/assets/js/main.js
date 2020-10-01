@@ -23,13 +23,19 @@
       }
     });
 
-    $('#subscription-btn').on('click', function () {
-      $('#subscription-target').click();
+    $('#inscreva-se-btn').on('click', function (event) {
+      event.preventDefault()
+      $('#inscreva-se-target').click();
     })
     // Schedule Carousel Starts
     $('#recipeCarousel').carousel({
       interval: 700
     })
+
+    $('a[href$="#"]').click(function (event) {
+      event.preventDefault ? event.preventDefault() : event.returnValue = false;
+
+  });
     
     $('.carousel .carousel-item').each(function(){
         var minPerSlide = 1;

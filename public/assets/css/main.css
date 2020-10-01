@@ -1325,10 +1325,6 @@ a.back-to-top:focus {
 .services-item {
   padding: 40px 20px;
   text-align: center;
-  transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
 }
 
 .services-item .icon i {
@@ -1339,7 +1335,7 @@ a.back-to-top:focus {
   font-size: 48px;
   text-align: center;
   margin-bottom: 15px;
-  color: #212121;
+  color: #105a8d;
   border-radius: 0;
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -1356,7 +1352,14 @@ a.back-to-top:focus {
   color: #105a8d;
 }
 
-.services-wrapper div:hover {
+.services-wrapper .s-item {
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.services-wrapper .s-item:hover {
   background: #f3f3f3;
 }
 
@@ -1661,7 +1664,7 @@ a.back-to-top:focus {
 
 #inscreva-se {
   background-color: #f3f4f3;
-  padding-top: 90px;
+  padding-top: 110px;
   min-height: 100vh;
 }
 
@@ -2295,7 +2298,7 @@ a.back-to-top:focus {
 
 .schedule-arts .carousel-inner {
   transform: translateX(0);
-  width: 100%!important;
+  width: 100% !important;
 }
 
 .schedule-arts .carousel-item {
