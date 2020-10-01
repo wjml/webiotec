@@ -10,7 +10,7 @@
 
     // Sticky Nav
     $(window).on('scroll', function () {
-      if ($(window).scrollTop() > 200) {
+      if ($(window).scrollTop() > 170) {
         $('.scrolling-navbar').addClass('top-nav-collapse');
         // if($('.nav-item.active')[0].lastElementChild.hash==="#subscription"){
         //   $('.scrolling-navbar').addClass('top-nav-subscription');
@@ -18,11 +18,38 @@
         //   $('.scrolling-navbar').removeClass('top-nav-subscription');
         // }
       } else {
-          // $('.scrolling-navbar').removeClass('top-nav-subscription');
-          $('.scrolling-navbar').removeClass('top-nav-collapse');
+        // $('.scrolling-navbar').removeClass('top-nav-subscription');
+        $('.scrolling-navbar').removeClass('top-nav-collapse');
       }
     });
 
+    $('#subscription-btn').on('click', function () {
+      $('#subscription-target').click();
+    })
+    // Schedule Carousel Starts
+    $('#recipeCarousel').carousel({
+      interval: 100
+    })
+    
+    $('.carousel .carousel-item').each(function(){
+        var minPerSlide = 3;
+        var next = $(this).next();
+        if (!next.length) {
+        next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+        
+        for (var i=0;i<minPerSlide;i++) {
+            next=next.next();
+            if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+            
+            next.children(':first-child').clone().appendTo($(this));
+          }
+    });
+    // Schedule Carousel Ends
+    
     /* ==========================================================================
        countdown timer
        ========================================================================== */

@@ -1,17 +1,11 @@
 /* only small desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-  #main-slide .carousel-caption {
-    top: 25%!important;
-  }
-  .carousel-indicators {
-    font-size: 14px;
-  }
-  #main-slide .carousel-item .carousel-caption .heading {
+  #home .home-caption .heading {
     font-size: 20px;
     margin-top: 5px;
   }
-  #main-slide .carousel-item .carousel-caption p {
-    font-size: 16px;
+  #home .home-caption p {
+    font-size: 18px;
   }
   #hero-area .contents .head-title {
     font-size: 40px;
@@ -35,14 +29,14 @@
 
 /* tablets */
 @media (max-width: 991px) {
-  #main-slide .carousel-caption {
+  #home .home-caption {
     top: 25%;
   }
-  #main-slide .carousel-item .carousel-caption .heading {
+  #home .home-caption .heading {
     font-size: 20px;
   }
-  #main-slide .carousel-item .carousel-caption p {
-    font-size: 13px;
+  #home .home-caption p {
+    font-size: 16px;
   }
   .page-title-section {
     padding: 40px 0;
@@ -97,14 +91,14 @@
 
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
-  #main-slide .carousel-caption {
-    top: 25%;
+  #home .home-caption {
+    top: 18%!important;
   }
-  #main-slide .carousel-item .carousel-caption .heading {
+  #home .home-caption .heading {
     font-size: 20px;
   }
-  #main-slide .carousel-item .carousel-caption p {
-    font-size: 13px;
+  #home .home-caption p {
+    font-size: 16px;
   }
   .countdown-timer .heading-count h2 {
     font-size: 25px;
@@ -161,18 +155,15 @@
   .section-sub {
     font-size: 16px;
   }
-  #main-slide .carousel-caption {
+  #home .home-caption {
     top: 22%;
   }
-  #main-slide .carousel-item .carousel-caption .heading {
+  #home .home-caption .heading {
     font-size: 14px;
     margin-top: 5px;
   }
-  #main-slide .carousel-item .carousel-caption p {
-    font-size: 13px;
-  }
-  #main-slide .carousel-indicators {
-    display: none;
+  #home .home-caption p {
+    font-size: 16px;
   }
   #hero-area .contents {
     padding: 100px 0;
@@ -254,17 +245,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  #main-slide .carousel-item .carousel-caption .heading {
+  #home .home-caption .heading {
     letter-spacing: 0;
   }
-  #main-slide .carousel-item .carousel-caption p {
-    font-size: 15px;
-  }
-  /* #main-slide .carousel-caption .btn {
-    margin: 0;
-  } */
-  #main-slide .carousel-indicators {
-    display: none;
+  #home .home-caption p {
+    font-size: 14px;
   }
   #about .title-sub {
     font-size: 24px;
