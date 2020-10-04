@@ -1,3 +1,4 @@
+
 (function ($) {
 
   "use strict";
@@ -22,7 +23,7 @@
         $('.scrolling-navbar').removeClass('top-nav-collapse');
       }
     });
-
+    
     $('#inscreva-se-btn').on('click', function (event) {
       event.preventDefault()
       $('#inscreva-se-target').click();
@@ -35,27 +36,27 @@
     $('a[href$="#"]').click(function (event) {
       event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
-  });
-    
-    $('.carousel .carousel-item').each(function(){
-        var minPerSlide = 1;
-        var next = $(this).next();
-        if (!next.length) {
+    });
+
+    $('.carousel .carousel-item').each(function () {
+      var minPerSlide = 1;
+      var next = $(this).next();
+      if (!next.length) {
         next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < minPerSlide; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
         }
+
         next.children(':first-child').clone().appendTo($(this));
-        
-        for (var i=0;i<minPerSlide;i++) {
-            next=next.next();
-            if (!next.length) {
-              next = $(this).siblings(':first');
-            }
-            
-            next.children(':first-child').clone().appendTo($(this));
-          }
+      }
     });
     // Schedule Carousel Ends
-    
+
     /* ==========================================================================
        countdown timer
        ========================================================================== */
@@ -86,10 +87,10 @@
 
     /* Nivo Lightbox 
     ========================================================*/
-    $('.lightbox').nivoLightbox({
-      effect: 'fadeScale',
-      keyboardNav: true,
-    });
+    // $('.lightbox').nivoLightbox({
+    //   effect: 'fadeScale',
+    //   keyboardNav: true,
+    // });
 
     // one page navigation 
     $('.navbar-nav').onePageNav({

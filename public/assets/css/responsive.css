@@ -20,7 +20,7 @@
         font-size: 14px
     }
 
-    .schedule .schedule-tab-title .nav-tabs .nav-link {
+    .cronograma .cronograma-tab-title .nav-tabs .nav-link {
         width: 210px
     }
 
@@ -28,7 +28,7 @@
         padding: 10px 35px 10px 45px
     }
 
-    #sponsors .spnsors-logo img {
+    #sponsors .sponsors-logo img {
         width: 80%
     }
 }
@@ -59,7 +59,7 @@
         margin-bottom: 10px
     }
 
-    .about-item {
+    .sobre-item {
         margin-bottom: 30px
     }
 
@@ -67,11 +67,11 @@
         font-size: 12px
     }
 
-    .schedule .schedule-tab-title .nav-tabs .nav-link {
+    .cronograma .cronograma-tab-title .nav-tabs .nav-link {
         width: 150px
     }
 
-    .schedule .card-header h4 {
+    .cronograma .card-header h4 {
         font-size: 14px
     }
 
@@ -79,7 +79,7 @@
         padding: 10px 35px 10px 45px
     }
 
-    #sponsors .spnsors-logo img {
+    #sponsors .sponsors-logo img {
         width: 80%
     }
 
@@ -128,11 +128,11 @@
         font-size: 25px
     }
 
-    .schedule .schedule-tab-title .nav-tabs .nav-link {
+    .cronograma .cronograma-tab-title .nav-tabs .nav-link {
         width: 150px
     }
 
-    .schedule .card-header h4 {
+    .cronograma .card-header h4 {
         font-size: 14px
     }
 
@@ -140,7 +140,7 @@
         padding: 10px 35px 10px 60px
     }
 
-    .about-item {
+    .sobre-item {
         margin-bottom: 30px
     }
 
@@ -152,7 +152,7 @@
         padding: 10px 60px 10px 45px
     }
 
-    #sponsors .spnsors-logo {
+    #sponsors .sponsors-logo {
         padding: 30px
     }
 
@@ -230,11 +230,11 @@
         font-size: 12px
     }
 
-    .schedule .card-body {
+    .cronograma .card-body {
         padding: 15px
     }
 
-    .schedule .schedule-tab-title .nav-tabs .nav-link {
+    .cronograma .cronograma-tab-title .nav-tabs .nav-link {
         width: 100%
     }
 
@@ -246,7 +246,7 @@
         padding: 10px 30px 10px 40px
     }
 
-    #sponsors .spnsors-logo {
+    #sponsors .sponsors-logo {
         margin-bottom: 15px
     }
 
@@ -288,7 +288,7 @@
         width: 60%
     }
 
-    #sponsors .spnsors-logo img {
+    #sponsors .sponsors-logo img {
         width: 80%
     }
 
@@ -320,7 +320,7 @@
         font-size: 14px
     }
 
-    #about .title-sub {
+    #sobre .title-sub {
         font-size: 24px
     }
 

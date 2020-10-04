@@ -21,6 +21,15 @@ html {
     filter: drop-shadow(-2px -5px 2px rgba(0, 0, 0, .2))
 }
 
+.papel.papel-invertido {
+    margin-top: 0px;
+    transform: scale(-1, -1);
+}
+
+.papel.papel-cor2 {
+    filter: brightness(0.95);
+}
+
 .heading-count span {
     letter-spacing: -5px
 }
@@ -131,7 +140,8 @@ ul li {
     position: relative;
     margin-bottom: 15px
 }
-.first-title{
+
+.first-title {
     font-size: 50px;
 }
 
@@ -526,7 +536,7 @@ a.back-to-top:hover {
 }
 
 .section-padding {
-    padding: 60px 0;
+    padding: 80px 0;
     padding-top: 100px;
 }
 
@@ -868,9 +878,16 @@ a.back-to-top:hover {
     display: none
 }
 
+@media screen and (min-width: 1550px) {
+    .main-background {
+        height: 800px;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width:992px) {
     .papel img {
-        width: 130%
+        width: 180%
     }
 
     .time-entry {
@@ -950,7 +967,7 @@ a.back-to-top:hover {
     }
 
     .papel img {
-        width: 200%
+        width: 300%
     }
 
     #home .home-caption .heading-img {
@@ -958,37 +975,37 @@ a.back-to-top:hover {
     }
 }
 
-.about-item {
+.sobre-item {
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .17);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
 
-.about-item .about-text {
+.sobre-item .sobre-text {
     padding: 20px;
     background: #fff
 }
 
-.about-item .about-text h3 {
+.sobre-item .sobre-text h3 {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500
 }
 
-.about-item .about-text h3 a {
+.sobre-item .sobre-text h3 a {
     color: #212121
 }
 
-.about-item .about-text h3 a:hover {
+.sobre-item .sobre-text h3 a:hover {
     color: #105a8d
 }
 
-.about-item .about-text .btn {
+.sobre-item .sobre-text .btn {
     margin-top: 10px
 }
 
-.about-item:hover {
+.sobre-item:hover {
     box-shadow: 1px 3px 15px rgba(0, 0, 0, .1)
 }
 
@@ -1021,7 +1038,6 @@ a.back-to-top:hover {
 .counter-section {
     background: #105a8d;
     overflow: hidden;
-    position: relative
 }
 
 .counter-section .counter {
@@ -1053,13 +1069,24 @@ a.back-to-top:hover {
 
 #sponsors {
     background: #105a8d;
-    /* background: #f3f4f3 */
+    color: white !important;
+    /* background: #f4f4f4 */
 }
 
-#sponsors .spnsors-logo {
+#sponsors h1 {
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, .2));
+    color: white !important;
+}
+
+#sponsors .section-title::before,
+#sponsors .section-title::after {
+    background-color: white !important;
+}
+
+#sponsors .sponsors-logo {
     text-align: center;
     border-radius: 4px;
-    padding: 50px;
+    padding: 40px 25px 40px 25px;
     margin-bottom: 30px;
     display: inline-block;
     border: 1px solid #ddd;
@@ -1068,28 +1095,32 @@ a.back-to-top:hover {
     transition: all .3s ease-in-out
 }
 
-#sponsors .spnsors-logo:hover {
+#sponsors .sponsors-logo:hover {
     border-color: transparent;
     box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
 }
 
-#schedules {
-    background: #f3f4f3;
+#sponsors .section-title-header img{
+    padding-top: 10px;
 }
 
-#schedule-tab {
+#cronogramas {
+    background: #f4f4f4;
+}
+
+#cronograma-tab {
     position: relative
 }
 
-.schedule .schedule-tab-title {
+.cronograma .cronograma-tab-title {
     margin-bottom: 35px
 }
 
-.schedule .schedule-tab-title .nav-tabs {
+.cronograma .cronograma-tab-title .nav-tabs {
     background: #fff
 }
 
-.schedule .schedule-tab-title .nav-tabs .nav-link {
+.cronograma .cronograma-tab-title .nav-tabs .nav-link {
     border-radius: 0;
     position: relative;
     cursor: pointer;
@@ -1100,9 +1131,9 @@ a.back-to-top:hover {
     padding: 20px 20px
 }
 
-.schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover,
-.schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link,
-.schedule .schedule-tab-title .nav-tabs .nav-link.active {
+.cronograma .cronograma-tab-title .nav-tabs .nav-item .nav-link:hover,
+.cronograma .cronograma-tab-title .nav-tabs .nav-item.show .nav-link,
+.cronograma .cronograma-tab-title .nav-tabs .nav-link.active {
     background: #105a8d;
     border: 1px solid #105a8d;
     transition: all .3s ease-in-out 0s;
@@ -1111,19 +1142,19 @@ a.back-to-top:hover {
     -o-transition: all .3s ease-in-out 0s
 }
 
-.schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover h4,
-.schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link h4,
-.schedule .schedule-tab-title .nav-tabs .nav-link.active h4 {
+.cronograma .cronograma-tab-title .nav-tabs .nav-item .nav-link:hover h4,
+.cronograma .cronograma-tab-title .nav-tabs .nav-item.show .nav-link h4,
+.cronograma .cronograma-tab-title .nav-tabs .nav-link.active h4 {
     color: #fff
 }
 
-.schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover h5,
-.schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link h5,
-.schedule .schedule-tab-title .nav-tabs .nav-link.active h5 {
-    color: #fff
+.cronograma .cronograma-tab-title .nav-tabs .nav-item .nav-link:hover h5,
+.cronograma .cronograma-tab-title .nav-tabs .nav-item.show .nav-link h5,
+.cronograma .cronograma-tab-title .nav-tabs .nav-link.active h5 {
+    color: #fff;
 }
 
-.schedule .schedule-tab-title .item-text h4 {
+.cronograma .cronograma-tab-title .item-text h4 {
     font-size: 15px;
     color: #2f323c;
     line-height: 22px;
@@ -1131,50 +1162,50 @@ a.back-to-top:hover {
     text-transform: uppercase
 }
 
-.schedule .schedule-tab-title .item-text h5 {
+.cronograma .cronograma-tab-title .item-text h5 {
     font-size: 14px;
     color: #848484;
     line-height: 16px;
     font-weight: 400
 }
 
-.schedule .schedule-tab-content .tab-content {
+.cronograma .cronograma-tab-content .tab-content {
     box-shadow: 1px 3px 15px rgba(0, 0, 0, .1)
 }
 
-.schedule .schedule-tab-content .card {
+.cronograma .cronograma-tab-content .card {
     border: none
 }
 
-.schedule .schedule-area .show .card-body {
-    background: #f3f4f3
+.cronograma .cronograma-area .show .card-body {
+    background: #f4f4f4
 }
 
-.schedule .card-header {
+.cronograma .card-header {
     border: none;
     cursor: pointer;
     background: #fff;
     border-bottom: 1px solid #ddd
 }
 
-.schedule .card-header .images-box {
+.cronograma .card-header .images-box {
     width: 70px;
     height: 70px;
     float: left;
     margin-right: 20px
 }
 
-.schedule .card-header .images-box img {
+.cronograma .card-header .images-box img {
     border-radius: 50%
 }
 
-.schedule .card-header .time {
+.cronograma .card-header .time {
     color: #777;
     font-size: 13px;
     margin-bottom: 5px
 }
 
-.schedule .card-header h4 {
+.cronograma .card-header h4 {
     font-weight: 700;
     font-size: 18px;
     color: #212121;
@@ -1182,7 +1213,7 @@ a.back-to-top:hover {
     text-transform: uppercase
 }
 
-.schedule .card-header .name {
+.cronograma .card-header .name {
     position: relative;
     font-size: 14px;
     color: #777;
@@ -1191,18 +1222,18 @@ a.back-to-top:hover {
     margin-bottom: 5px
 }
 
-.schedule .schedule-area .card-body {
+.cronograma .cronograma-area .card-body {
     padding: 15px 70px 15px 110px;
     background: #fff;
     border-bottom: 1px solid #ddd
 }
 
-.schedule .schedule-area .card-body .location {
+.cronograma .cronograma-area .card-body .location {
     font-size: 13px;
     color: #777
 }
 
-.schedule .schedule-area .card-body .location span {
+.cronograma .cronograma-area .card-body .location span {
     color: #105a8d;
     margin-right: 5px
 }
@@ -1253,7 +1284,7 @@ a.back-to-top:hover {
     padding-left: 56px
 }
 
-#about {
+#sobre {
     background: #fff;
     padding-top: 90px
 }
@@ -1332,7 +1363,7 @@ a.back-to-top:hover {
 }
 
 #gallery {
-    background: #f3f4f3;
+    background: #f4f4f4;
     position: relative
 }
 
@@ -1390,11 +1421,11 @@ a.back-to-top:hover {
     -o-transform: scale(1, 1)
 }
 
-.team-item:hover {
+.palestrantes-item:hover {
     box-shadow: 0 25px 35px -12px rgba(0, 0, 0, .35)
 }
 
-.team-item {
+.palestrantes-item {
     margin: 15px 0;
     padding: 10px;
     border-radius: 4px;
@@ -1406,13 +1437,13 @@ a.back-to-top:hover {
     -o-transition: all .3s ease-in-out 0s
 }
 
-.team-item .team-img {
+.palestrantes-item .palestrantes-img {
     position: relative;
     cursor: pointer;
     overflow: hidden
 }
 
-.team-item .team-overlay {
+.palestrantes-item .palestrantes-overlay {
     height: 100%;
     position: absolute;
     top: 0;
@@ -1425,14 +1456,14 @@ a.back-to-top:hover {
     -o-transition: all .3s ease-in-out 0s
 }
 
-.team-item .overlay-social-icon {
+.palestrantes-item .overlay-social-icon {
     color: #fff;
     top: 15px;
     position: absolute;
     right: 15px
 }
 
-.team-item .overlay-social-icon .social-icons {
+.palestrantes-item .overlay-social-icon .social-icons {
     padding-left: 0;
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
@@ -1443,17 +1474,17 @@ a.back-to-top:hover {
     -o-transition: all .3s ease-in-out 0s
 }
 
-.team-item .overlay-social-icon .social-icons li {
+.palestrantes-item .overlay-social-icon .social-icons li {
     display: inline-block;
     margin: 0 4px
 }
 
-.team-item .overlay-social-icon .social-icons li a {
+.palestrantes-item .overlay-social-icon .social-icons li a {
     letter-spacing: 0;
     outline: 0 !important
 }
 
-.team-item .overlay-social-icon .social-icons li a i {
+.palestrantes-item .overlay-social-icon .social-icons li a i {
     font-size: 20px;
     color: #fff;
     width: 160px;
@@ -1468,52 +1499,52 @@ a.back-to-top:hover {
     -o-transition: all .3s ease-in-out 0s
 }
 
-.team-item .overlay-social-icon .social-icons li a:hover .fa-facebook {
+.palestrantes-item .overlay-social-icon .social-icons li a:hover .fa-facebook {
     background: #3b5998
 }
 
-.team-item .overlay-social-icon .social-icons li a:hover .fa-twitter {
+.palestrantes-item .overlay-social-icon .social-icons li a:hover .fa-twitter {
     background: #00aced
 }
 
-.team-item .overlay-social-icon .social-icons li a:hover .fa-instagram {
+.palestrantes-item .overlay-social-icon .social-icons li a:hover .fa-instagram {
     background: #ff500f
 }
 
-.team-item .info-text {
+.palestrantes-item .info-text {
     position: absolute;
     bottom: 10px;
     left: 10px;
     padding: 13px 10px;
-    background: #f3f4f3;
+    background: #f4f4f4;
     text-align: left
 }
 
-.team-item .info-text h3 {
+.palestrantes-item .info-text h3 {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 5px
 }
 
-.team-item .info-text h3 a {
+.palestrantes-item .info-text h3 a {
     color: #212121
 }
 
-.team-item .info-text h3 a:hover {
+.palestrantes-item .info-text h3 a:hover {
     color: #105a8d
 }
 
-.team-item .info-text p {
+.palestrantes-item .info-text p {
     margin: 0;
     color: #888
 }
 
-.team-item:hover .team-overlay {
+.palestrantes-item:hover .palestrantes-overlay {
     opacity: 1
 }
 
-.team-item:hover .social-icons {
+.palestrantes-item:hover .social-icons {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     transform: translateY(0)
@@ -1623,7 +1654,7 @@ a.back-to-top:hover {
 }
 
 #inscreva-se {
-    background-color: #f3f4f3;
+    background-color: #f4f4f4;
     padding-top: 120px;
     min-height: 100vh
 }
@@ -1730,32 +1761,10 @@ a.back-to-top:hover {
     font-size: 18px
 }
 
-.form-control {
-    display: block;
-    width: 100%;
-    line-height: 27px;
-    font-size: 14px;
-    box-shadow: none;
-    color: #848484;
-    text-transform: capitalize;
-    background: #f7f7f7;
-    padding: 7px 19px;
-    border: 1px solid #e5e5e5;
-    border-radius: 0;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease
-}
-
-.form-control:focus {
-    border-color: #105a8d;
-    box-shadow: none;
-    outline: 0
-}
-
 .footer-area {
-    background: #222
+    background: #222;
+    text-align: center;
+    padding: 60px;
 }
 
 .footer-area h3 {
@@ -1767,89 +1776,17 @@ a.back-to-top:hover {
 }
 
 .footer-area img {
-    width: 55%
+    width: 20%
 }
 
 .footer-area p {
     font-size: 14px;
+    letter-spacing: 1px;
     color: #fff;
-    line-height: 20px;
+    line-height: 24px;
     margin: 0;
-    padding-right: 50px
-}
-
-.footer-area ul li a {
-    color: #fff;
-    font-size: 13px;
-    font-weight: 400
-}
-
-.footer-area ul li a:hover {
-    color: #105a8d
-}
-
-.footer-area .footer-social li {
-    display: inline-block
-}
-
-.footer-area .footer-social li a {
-    color: #000;
-    background: #fff;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    display: block;
     text-align: center;
-    border-radius: 4px;
-    font-size: 15px;
-    margin-right: 5px;
-    transition: all .3s ease-in-out 0s;
-    -moz-transition: all .3s ease-in-out 0s;
-    -webkit-transition: all .3s ease-in-out 0s;
-    -o-transition: all .3s ease-in-out 0s
-}
-
-.footer-area .footer-social li a:hover {
-    color: #fff
-}
-
-.footer-area .footer-social li .facebook:hover {
-    background: #3b5998
-}
-
-.footer-area .footer-social li .twitter:hover {
-    background: #00aced
-}
-
-.footer-area .footer-social li .linkedin:hover {
-    background: #0073b1
-}
-
-.footer-area .footer-social li .foursqare:hover {
-    background: #25a0ca
-}
-
-.footer-area .footer-social li .google-plus:hover {
-    background: #ff500f
-}
-
-.footer-area .footer-text p {
-    font-size: 14px;
-    margin-top: 20px;
-    color: #fff
-}
-
-.footer-area .footer-text p a {
-    color: #105a8d
-}
-
-.footer-area .footer-text .nav-inline .nav-link {
-    padding: 11px 7px;
-    color: #888
-}
-
-.footer-area .footer-text .nav-inline .nav-link:hover {
-    color: #105a8d
+    margin-top: 8px;
 }
 
 .image-list {
@@ -2180,27 +2117,27 @@ a.back-to-top:hover {
     padding: 0
 }
 
-.schedule-arts {
+.cronograma-arts {
     width: calc(100% + 30px);
     left: -15px;
 }
 
-.schedule-arts .carousel-inner {
+.cronograma-arts .carousel-inner {
     transform: translateX(0);
     width: 100% !important
 }
 
-.schedule-arts .carousel-item {
+.cronograma-arts .carousel-item {
     margin: 15px 0 45px 0
 }
 
-.schedule .section-title-header p {
+.cronograma .section-title-header p {
     padding-top: 20px;
     padding-bottom: 15px;
 }
 
-.schedule-arts:before,
-.schedule-arts:after {
+.cronograma-arts:before,
+.cronograma-arts:after {
     position: absolute;
     content: '';
     left: 50%;
@@ -2210,79 +2147,79 @@ a.back-to-top:hover {
     background-color: #105a8d
 }
 
-.schedule-arts:after {
+.cronograma-arts:after {
     margin-left: -30px;
     bottom: 14px;
 }
 
-.schedule-arts:before {
+.cronograma-arts:before {
     margin-left: -45px;
 }
 
 @media (max-width:768px) {
-    .schedule-arts .carousel-inner .carousel-item>div {
+    .cronograma-arts .carousel-inner .carousel-item>div {
         display: none
     }
 
-    .schedule-arts .carousel-inner .carousel-item>div:first-child {
+    .cronograma-arts .carousel-inner .carousel-item>div:first-child {
         display: block
     }
 }
 
-.schedule-arts .carousel-inner .carousel-item-next,
-.schedule-arts .carousel-inner .carousel-item-prev,
-.schedule-arts .carousel-inner .carousel-item.active {
+.cronograma-arts .carousel-inner .carousel-item-next,
+.cronograma-arts .carousel-inner .carousel-item-prev,
+.cronograma-arts .carousel-inner .carousel-item.active {
     display: flex
 }
 
-.schedule-arts .carousel-inner .card-body {
+.cronograma-arts .carousel-inner .card-body {
     box-shadow: 1px 3px 15px rgba(0, 0, 0, .1)
 }
 
-.schedule-arts .carousel-control-next,
-.schedule-arts .carousel-control-prev {
+.cronograma-arts .carousel-control-next,
+.cronograma-arts .carousel-control-prev {
     width: 15%;
     height: calc(100% - 42px) !important;
     margin-top: 16px
 }
 
-.schedule-arts .carousel-control-prev {
+.cronograma-arts .carousel-control-prev {
     justify-content: flex-start
 }
 
-.schedule-arts .carousel-control-next {
+.cronograma-arts .carousel-control-next {
     justify-content: flex-end
 }
 
-.schedule-arts .card-body {
+.cronograma-arts .card-body {
     padding: 15px
 }
 
 @media (min-width:768px) {
 
-    .schedule-arts .carousel-inner .carousel-item-next,
-    .schedule-arts .carousel-inner .carousel-item-right.active {
+    .cronograma-arts .carousel-inner .carousel-item-next,
+    .cronograma-arts .carousel-inner .carousel-item-right.active {
         transform: translateX(33.333%)
     }
 
-    .schedule-arts .carousel-inner .carousel-item-left.active,
-    .schedule-arts .carousel-inner .carousel-item-prev {
+    .cronograma-arts .carousel-inner .carousel-item-left.active,
+    .cronograma-arts .carousel-inner .carousel-item-prev {
         transform: translateX(-33.333%)
     }
 }
 
-.schedule-arts .carousel-inner .carousel-item-left,
-.schedule-arts .carousel-inner .carousel-item-right {
+.cronograma-arts .carousel-inner .carousel-item-left,
+.cronograma-arts .carousel-inner .carousel-item-right {
     transform: translateX(0)
 }
 
-.schedule-arts .carousel-control-next,
-.schedule-arts .carousel-control-prev {
+.cronograma-arts .carousel-control-next,
+.cronograma-arts .carousel-control-prev {
     opacity: 1
 }
 
-.schedule-arts .carousel-control-next-icon,
-.schedule-arts .carousel-control-prev-icon {
+.cronograma-arts .carousel-control-next-icon,
+.cronograma-arts .carousel-control-prev-icon {
     margin: -5px;
     padding: 35px 15px;
     filter: invert();
