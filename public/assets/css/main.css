@@ -1078,6 +1078,15 @@ a.back-to-top:hover {
     color: white !important;
 }
 
+
+#sponsors p {
+text-align: center;
+font-size: 20px;
+padding-bottom: 10px;
+}
+#sponsors .conta-banco{
+    /* text-align: left; */
+}
 #sponsors .section-title::before,
 #sponsors .section-title::after {
     background-color: white !important;
@@ -1703,7 +1712,7 @@ a.back-to-top:hover {
 
 .container-form {
     left: 0;
-    padding: 40px 15px;
+    padding: 10px 15px 40px 15px;
     margin: auto;
     z-index: 99
 }
