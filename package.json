@@ -16,10 +16,18 @@
     "type": "git",
     "url": "git+https://github.com/wjml/webiotec.git"
   },
-  "author": "",
+  "author": "Willian José Menezes Lourenço",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wjml/webiotec/issues"
   },
-  "homepage": "https://github.com/wjml/webiotec#readme"
+  "homepage": "https://github.com/wjml/webiotec#readme",
+  "keywords": [
+    "webinar",
+    "seminario",
+    "online",
+    "biotecnologia",
+    "webiotec",
+    "evento"
+  ]
 }
